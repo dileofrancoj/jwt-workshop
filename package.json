@@ -1,0 +1,35 @@
+{
+  "name": "jwt-workshop-beta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm run clean && npm run build && node build/index.js",
+    "dev": "export NODE_ENV=dev && babel-node src/index --watch",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint --fix",
+    "clean": "rm -rf build && mkdir build",
+    "build": "babel src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/node": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.23.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/runtime": "^7.23.9",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2"
+  }
+}
