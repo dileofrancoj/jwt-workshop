@@ -24,6 +24,8 @@ module.exports = {
       'error',
       { builtinGlobals: false, hoist: 'functions', allow: ['_'] },
     ],
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off'
   },
   ignorePatterns: ['.eslintrc.js'],
 };
